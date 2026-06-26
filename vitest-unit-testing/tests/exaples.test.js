@@ -53,4 +53,14 @@ it('charges  correct amount for different weights',()=>{
     expect(shippingCost(10)).toBe(8.99)
     expect(shippingCost(25)).toBe(14.99)  
 })
+
+// boudnary test
+it('charges  correct amount for different weights',()=>{
+    expect(shippingCost(1)).toBe(3.99)
+    expect(shippingCost(5)).toBe(5.99)
+    expect(shippingCost(20)).toBe(8.99)
+})
+
+
+
 })
